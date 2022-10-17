@@ -20,5 +20,7 @@ app.include_router(auth.router)
 app.include_router(vote.router)
 
 # models.Base.metadata.create_all(bind=engine)
+def root():
+    return {"message": "Welcome to Sociales API"}
 
 
